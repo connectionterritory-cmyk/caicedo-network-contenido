@@ -1,0 +1,37 @@
+REPORTE DE QA — Carrusel "El camino" (Parte 2 · Después de la licencia)
+Motor: render.mjs (sin modificar) · Marca: _marca/ (sin modificar)
+
+1) Salida del motor:
+   10 piezas 1080x1350 → /home/user/caicedo-network-contenido/carrusel-el-camino/export
+   QC OK: sin overflow ni contenido fuera del área segura
+
+2) Dimensiones y peso de las láminas:
+   01.jpg  1080x1350  150 KB  OK
+   02.jpg  1080x1350  140 KB  OK
+   03.jpg  1080x1350  157 KB  OK
+   04.jpg  1080x1350  134 KB  OK
+   05.jpg  1080x1350  167 KB  OK
+   06.jpg  1080x1350  158 KB  OK
+   07.jpg  1080x1350  169 KB  OK
+   08.jpg  1080x1350  152 KB  OK
+   09.jpg  1080x1350  149 KB  OK
+   10.jpg  1080x1350  176 KB  OK
+   Total: 10 de 10
+
+3) Contenido:
+   [OK] "DUPLICAR" no aparece en láminas ni captions
+   [OK] "FORMAR LÍDERES" en lámina 8, mapas y cuadrícula (9 apariciones)
+   [OK] Aviso legal en lámina 10
+   [OK] Aviso legal en caption Facebook, antes de hashtags
+   [OK] Aviso legal en caption Instagram, antes de hashtags
+   [OK] "En mi experiencia, el primer mercado se termina rápido" en ambos captions
+   [OK] Instagram ≤ 2,200 caracteres (1417)
+   [OK] Instagram ≤ 30 hashtags (10)
+   [OK] Facebook: 1326 caracteres, 4 hashtags
+   [OK] Sin cifras de ingresos ni "$" en láminas/captions
+
+4) Revisión visual (manual):
+   - Lámina 8: el acento de "LÍDERES" chocaba con "FORMAR". Corregido (interlineado 1.1) y verificado.
+   - Láminas 1–10 revisadas en contact sheet: sin cortes, contraste correcto, logos visibles.
+
+RESULTADO: APROBADO
