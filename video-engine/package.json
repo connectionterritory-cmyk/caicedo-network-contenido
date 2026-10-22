@@ -1,0 +1,23 @@
+{
+  "name": "@flowsuite/izzy-video-engine",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Manifest-driven Remotion renderer for IZZY and future Flow Suite Content Studio.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --no-open",
+    "preview": "remotion studio src/index.ts --no-open",
+    "render:w43-002": "remotion render src/index.ts IZZY-W43-002 output/IZZY-W43-002.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.534",
+    "@remotion/transitions": "^4.0.534",
+    "remotion": "^4.0.534",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
