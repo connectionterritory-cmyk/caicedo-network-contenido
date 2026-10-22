@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "content_id": "IZZY-W43-002",
+  "campaign": "new-agent-system",
+  "format": "reel",
+  "engine": "izzy-video-engine-remotion",
+  "source": {
+    "brief_ref": "connectionterritory-cmyk/izzyfbservices:tools/content-orchestrator/data/content/briefs/IZZY-W43-002-BRIEF.md",
+    "storyboard_ref": "connectionterritory-cmyk/izzyfbservices:tools/content-orchestrator/data/content/storyboards/IZZY-W43-002-STORYBOARD.md"
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "timing": {
+    "target_duration_seconds": 45,
+    "duration_is_target": true
+  },
+  "brand": {
+    "profile": "izzy-premium",
+    "asset_root": "_marca"
+  },
+  "voice": {
+    "style": "moises-conversational-practical",
+    "asset_ref": null,
+    "status": "unresolved"
+  },
+  "music": {
+    "asset_ref": null,
+    "license_verified": null,
+    "status": "unresolved"
+  },
+  "captions": {
+    "enabled": true,
+    "timing_source": "unresolved",
+    "safe_zones_required": true
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "order": 1,
+      "target_start_seconds": 0,
+      "target_end_seconds": 4,
+      "message": "¿Ya hablaste con toda tu familia y tus amigos?",
+      "visual_direction": "Moisés on camera or an approved human portrait framing with large hook text.",
+      "motion_direction": "Immediate start; no logo intro; fast text reveal.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-02",
+      "order": 2,
+      "target_start_seconds": 4,
+      "target_end_seconds": 8,
+      "message": "Eso no significa que se acabó tu mercado.",
+      "visual_direction": "Expand from a small contact-circle concept into a wider network/community concept.",
+      "motion_direction": "Visual expansion reinforces the reframe.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-03",
+      "order": 3,
+      "target_start_seconds": 8,
+      "target_end_seconds": 14,
+      "message": "Muchos agentes llegan aquí y piensan: ‘ya no tengo a quién hablarle.’",
+      "visual_direction": "Phone/contact-list or agent-at-desk concept without displaying private real contacts.",
+      "motion_direction": "Short cut or B-roll; emphasize the quoted objection.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-04",
+      "order": 4,
+      "target_start_seconds": 14,
+      "target_end_seconds": 20,
+      "message": "El problema no es que desapareció el mercado. Te falta un sistema para abrir conversaciones nuevas.",
+      "visual_direction": "Simple system/path graphic or agent moving from one channel to several.",
+      "motion_direction": "Calm authority; emphasize ‘sistema’.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-05",
+      "order": 5,
+      "target_start_seconds": 20,
+      "target_end_seconds": 25,
+      "message": "Primero: referidos e introducciones.",
+      "visual_direction": "Conversation/referral concept.",
+      "motion_direction": "Number 1 with concise iconography.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-06",
+      "order": 6,
+      "target_start_seconds": 25,
+      "target_end_seconds": 30,
+      "message": "Segundo: comunidad y alianzas estratégicas.",
+      "visual_direction": "Community/business relationship B-roll concept.",
+      "motion_direction": "Number 2 with transition consistent with scene 5.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-07",
+      "order": 7,
+      "target_start_seconds": 30,
+      "target_end_seconds": 35,
+      "message": "Tercero: contenido educativo que inicia conversaciones.",
+      "visual_direction": "Phone/social-content concept without fake metrics.",
+      "motion_direction": "Number 3 with restrained social-content motion.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-08",
+      "order": 8,
+      "target_start_seconds": 35,
+      "target_end_seconds": 40,
+      "message": "Escoge canales. Mide tu actividad. Mejora tu conversación. Repite.",
+      "visual_direction": "Clean four-step typography over the IZZY brand system.",
+      "motion_direction": "Rhythmic sequential reveal.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    },
+    {
+      "id": "scene-09",
+      "order": 9,
+      "target_start_seconds": 40,
+      "target_end_seconds": 45,
+      "message": "Comenta MERCADO si quieres que desarrolle una guía práctica para abrir nuevos mercados.",
+      "visual_direction": "Moisés on camera or branded closing card.",
+      "motion_direction": "Give MERCADO the strongest emphasis; one CTA only.",
+      "asset_ref": null,
+      "asset_status": "unresolved"
+    }
+  ],
+  "cta": {
+    "text": "Comenta MERCADO si quieres que desarrolle una guía práctica para abrir nuevos mercados.",
+    "keyword": "MERCADO"
+  },
+  "production_state": {
+    "status": "assets_pending",
+    "qa_status": "pending",
+    "approval_status": "pending",
+    "distribution_status": "not_sent"
+  }
+}
