@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flowsuite.local/schemas/video-production-manifest.schema.json",
+  "title": "Flow Suite Video Production Manifest",
+  "description": "Stable contract between Content Orchestrator/Flow Suite and the IZZY Video Engine. This contract describes production intent; it does not grant publish approval or assert QA/compliance results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "content_id",
+    "format",
+    "engine",
+    "canvas",
+    "timing",
+    "brand",
+    "scenes",
+    "cta",
+    "production_state"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "content_id": { "type": "string", "minLength": 1 },
+    "campaign": { "type": ["string", "null"] },
+    "format": { "type": "string", "enum": ["reel", "video", "story"] },
+    "engine": { "type": "string", "const": "izzy-video-engine-remotion" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "brief_ref": { "type": ["string", "null"] },
+        "storyboard_ref": { "type": ["string", "null"] }
+      }
+    },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "fps"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "fps": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_duration_seconds"],
+      "properties": {
+        "target_duration_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "duration_is_target": { "type": "boolean", "default": true }
+      }
+    },
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile"],
+      "properties": {
+        "profile": { "type": "string", "minLength": 1 },
+        "asset_root": { "type": ["string", "null"] }
+      }
+    },
+    "voice": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "style": { "type": ["string", "null"] },
+        "asset_ref": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["unresolved", "ready"] }
+      }
+    },
+    "music": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asset_ref": { "type": ["string", "null"] },
+        "license_verified": { "type": ["boolean", "null"] },
+        "status": { "type": "string", "enum": ["none", "unresolved", "ready"] }
+      }
+    },
+    "captions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "timing_source": { "type": "string", "enum": ["final_audio", "manual", "unresolved"] },
+        "safe_zones_required": { "type": "boolean" }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "order", "target_start_seconds", "target_end_seconds", "message", "visual_direction", "asset_status"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "order": { "type": "integer", "minimum": 1 },
+          "target_start_seconds": { "type": "number", "minimum": 0 },
+          "target_end_seconds": { "type": "number", "exclusiveMinimum": 0 },
+          "message": { "type": "string", "minLength": 1 },
+          "visual_direction": { "type": "string", "minLength": 1 },
+          "motion_direction": { "type": ["string", "null"] },
+          "asset_ref": { "type": ["string", "null"] },
+          "asset_status": { "type": "string", "enum": ["unresolved", "ready"] }
+        }
+      }
+    },
+    "cta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "keyword"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "keyword": { "type": ["string", "null"] }
+      }
+    },
+    "production_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "qa_status", "approval_status", "distribution_status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["manifest_ready", "assets_pending", "render_ready", "rendered"] },
+        "qa_status": { "type": "string", "enum": ["pending", "passed", "failed"] },
+        "approval_status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "distribution_status": { "type": "string", "enum": ["not_sent", "draft", "scheduled", "published"] }
+      }
+    }
+  }
+}
