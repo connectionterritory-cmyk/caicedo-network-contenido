@@ -1,0 +1,33 @@
+REPORTE DE QA — Carrusel "¿Estás comprando leads?"
+Motor: render.mjs (sin modificar) · Marca: _marca/ (sin modificar)
+
+1) Salida del motor:
+   8 piezas 1080x1350 → /home/user/caicedo-network-contenido/carrusel-leads-conversion/export
+   QC OK: sin overflow ni contenido fuera del área segura
+
+2) Dimensiones y peso:
+   01.jpg  1080x1350  128 KB  OK
+   02.jpg  1080x1350  110 KB  OK
+   03.jpg  1080x1350  110 KB  OK
+   04.jpg  1080x1350  138 KB  OK
+   05.jpg  1080x1350  142 KB  OK
+   06.jpg  1080x1350  128 KB  OK
+   07.jpg  1080x1350  120 KB  OK
+   08.jpg  1080x1350  143 KB  OK
+   Total: 8 de 8
+
+3) Contenido:
+   [OK] Palabra clave CONVERSIÓN en lámina 8 y en ambos captions
+   [OK] Sin porcentajes, "$" ni promesas ("garantiza", "duplica") en texto visible y captions
+   [OK] El único número del contenido es el "100" del ejemplo (encontrados: 100)
+   [OK] Instagram ≤ 2,200 caracteres (766)
+   [OK] Instagram ≤ 30 hashtags (10)
+   [OK] Facebook: 685 caracteres, 4 hashtags
+   [OK] Alt text: 8 líneas, todas ≤ 125 caracteres
+
+4) Revisión visual (manual):
+   - Lámina 4: filas del embudo partían el texto en dos líneas. Corregido: cada pregunta en una línea.
+   - Lámina 7: frase inicial en mayúsculas pequeñas, poco legible. Cambiada a texto normal.
+   - Láminas 1–8 revisadas en contact sheet; lámina 4 a tamaño completo.
+
+RESULTADO: APROBADO
